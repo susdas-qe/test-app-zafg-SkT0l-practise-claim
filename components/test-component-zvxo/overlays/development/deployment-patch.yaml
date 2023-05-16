@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-zvxo
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas/test-images@sha256:7454945d3231935cdcf0624554cc337d10216ae8e4f0e2aced54cd2377ff4868
+        name: my-python
+        resources: {}
+status: {}
